@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+<!-- Navigation -->
+<header class="header" id="home">
+  <nav class="nav-container">
+    <div class="logo-container">
+      <a href="#" class="nav-logo">Wonu.</a>
+      <div class="mouse-effect"></div>
+    </div>
+
+    <div class="nav-menu" id="navbar-menu">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a data-hover-text="Home" href="index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="Works" href="#project" class="navbar-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="About Me" href="about.html" class="navbar-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="Say Hi!" href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-open" id="nav-open">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- About Me Section -->
+<section class="about">
+  <div class="about-container">
+    <div class="about-content">
+      <div class="profile-image-container">
+        <img src="images/wonu.jpg" alt="Profile Image" class="profile-image">
+      </div>
+      <div class="text">
+        <h2 class="section-title">👋, I'm Wonuola.</h2>
+        <p class="description">I am a UI/UX Designer and Web Developer based in Nigeria. I create thoughtful experiences that are built for everyone to use and enjoy.</p>
+        <p>Creating accessible digital experiences that resonate with users is at the core of my design philosophy.</p>
+        <h3 class="subheading">How did I get into Design?</h3>
+        <p>Something that I truly enjoyed throughout all the different experiences I’ve had are the meaningful interactions with the people that I work with. 
+          I chose to pursue this path into UI and Web Development where I could utilize both of my passions in a new purposeful way. I want to explore design through the emotional, functional, and aesthetic spectrums and have the opportunity to make a positive impact on people’s lives.</p>
+        <h3 class="subheading">Other things I enjoy...</h3>
+        <p><strong>Food & Desserts:</strong> I’m always on the lookout for the next best ice-cream shops in Lagos and enjoy eating Pasta.</p>
+        <p><strong>Party:</strong> I love house parties with friends in my downtime.</p>
+        <p><strong>Makeup:</strong> Using my face as a canvas for makeup is a hobby of mine. Similar to designing, I enjoy using makeup to express beauty in different ways.</p>
+        <p><strong>Music:</strong> I love listening to music and having karaoke nights with myself at home.</p>
+        <p><strong>Learning:</strong> I am currently taking the Google technical writing course and react.js course .</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer section" id="footer">
+    <div class="footer-email">
+      <a href="mailto:wonuolaog@gmail.com">
+        wonuolaog@gmail.com
+      </a>
+    </div>
+    <div class="copyright">
+      &copy; 2023 by Wonuola Ogunsanmi
+    </div>
+  </footer>
+
+  <!---scroll-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-sort-z-a scrollup-icon'></i>
+  </a>
+
+  <script>
+    // Animation for arrow, navigation menu, logo using GSAP
+    gsap.from(".nav-container", { opacity: 0, y: -20, duration: 1 });
+    gsap.from(".nav-logo", { opacity: 0, x: -20, duration: 1, delay: 0.5 });
+    gsap.from(".nav-list li", { opacity: 0, x: -20, duration: 1, stagger: 0.1, delay: 0.7 });
+    gsap.from(".nav-open", { opacity: 0, x: -20, duration: 1, delay: 1 });
+    gsap.from(".about-description", { opacity: 0, y: 20, duration: 1, delay: 1.5 });
+  </script>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+<!-- Navigation -->
+<header class="header" id="home">
+  <nav class="nav-container">
+    <div class="logo-container">
+      <a href="#" class="nav-logo">Wonu.</a>
+      <div class="mouse-effect"></div>
+    </div>
+
+    <div class="nav-menu" id="navbar-menu">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a data-hover-text="Home" href="index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="Works" href="#project" class="navbar-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="About Me" href="about.html" class="navbar-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a data-hover-text="Say Hi!" href="contact.html" class="navbar-link">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-open" id="nav-open">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I'm Wonuola!</h1>
+    <p>A (UI) designer &amp; Website Developer.
+      I enjoy designing meaningful experiences for brands &amp; businesses to help them
+      serve their target audience.</p>
+  </div>
+
+  <div class="rounded-text rotating">
+    <svg viewBox="0 0 200 200">
+      <path id="textPath" d="M 80,0 A 80,80 0 0 1 -80,0 A 80,80 0 0 1 80,0" transform="translate(100,100)" fill="none" stroke-width="0"></path>
+      <g font-size="15.1px">
+        <text text-anchor="start">
+          <textPath class="coloring" xlink:href="#textPath" startOffset="0%">  Front-End - UI Design - UX Design - Web Development </textPath>
+        </text>
+      </g>
+    </svg>
+  </div> 
+</section>
+
+<!-- Spotify Embed Section -->
+<section class="spotify-section">
+  <h2 class="section-title">Media</h2>
+<div class="spotify-embed">
+  <!--  Spotify Embed code here -->
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1IdrHVSNvLJLu2WCqsmDcB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
+</section>
+
+<section class="projects" id="project">
+  <div class="container">
+    <h2 class="section-title">Featured <br/>Case Studies</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="images/project1.png" alt="Project 1">
+        <h3 class="project-title">Artify</h3>
+        <p class="project-description">A mobile app that helps shopping for wall art easily from your homes.</p>
+        <a href="https://www.behance.net/gallery/174520397/Artify-A-wall-art-shopping-app" class="project-link">
+          <span class="project-link1">Read Project Here</span>
+          <span class="project-link2">Behance Case Study</span>
+      </a>
+      </div>
+      <div class="project">
+        <img src="images/project2.png" alt="Project 2">
+        <h3 class="project-title">Escape</h3>
+        <p class="project-description">A meditation app that helps people to relax and focus.</p>
+        <a href="https://www.behance.net/gallery/174524425/Meditation-App-UIUX-Case-Study" class="project-link">
+          <span class="project-link1">Read Project Here</span>
+          <span class="project-link2">Behance Case Study</span>
+      </a>
+      </div>
+      <div class="project">
+        <img src="images/project3.png" alt="Project 3">
+        <h3 class="project-title">Cakemade Bakery</h3>
+        <p class="project-description">A responsive website for a bakery and cafe</p>
+        <a href="https://www.behance.net/gallery/137716633/Bakery-Website-Cakemade-Bakery" class="project-link">
+          <span class="project-link1">Read Project Here</span>
+          <span class="project-link2">Behance Case Study</span>
+      </a>
+      </div>
+      <div class="project">
+        <img src="images/project4.png" alt="Project 4">
+        <h3 class="project-title">Dose Of Advice</h3>
+        <p class="project-description">A random generator app</p>
+        <a href="https://adoseofadvice.netlify.app/" class="project-link">
+          <span class="project-link1">View Project Here</span>
+          <span class="project-link2">Visit live site</span>
+      </a>
+  </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer section" id="footer">
+             <div class="footer-email">
+                 <a href="mailto:wonuolaog@gmail.com">
+                     wonuolaog@gmail.com
+                 </a>
+             </div>
+             <div class="copyright">
+                 &copy; 2023 by Wonuola Ogunsanmi
+             </div>
+</footer>
+<!---scroll-->
+<a href="#" class="scrollup" id="scroll-up">
+ <i class='bx bx-sort-z-a scrollup-icon'></i>
+</a>
+
+<script>
+  // Animation for arrow, navigation menu, logo, and hero text using GSAP
+  gsap.from(".nav-container", { opacity: 0, y: -20, duration: 1 });
+  gsap.from(".nav-logo", { opacity: 0, x: -20, duration: 1, delay: 0.5 });
+  gsap.from(".nav-list li", { opacity: 0, x: -20, duration: 1, stagger: 0.1, delay: 0.7 });
+  gsap.from(".nav-open", { opacity: 0, x: -20, duration: 1, delay: 1 });
+  gsap.from(".hero-text", { opacity: 0, y: 20, duration: 1, delay: 1.5 });
+  gsap.from(".scroll-down .arrow", { opacity: 0, x: -20, duration: 1, delay: 2 });
+</script>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
