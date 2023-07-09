@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const expandMouseEffect = () => {
-    mouseEffect.style.width = '120px';
-    mouseEffect.style.height = '120px';
+    mouseEffect.style.width = '100px';
+    mouseEffect.style.height = '100px';
   };
 
   const shrinkMouseEffect = () => {
