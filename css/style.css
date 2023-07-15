@@ -731,23 +731,51 @@ button {
   }
 }
 
- /* Media Query for min width 768px */
- @media screen and (min-width: 768px) {
+ /* Media Queries */
+ @media screen and (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   .nav-list {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav-item {
-    margin-right: 20px;
-  }
-  
-  .nav-open {
     display: none;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+
+  .nav-menu .nav-open {
+    display: block;
+    color: var(--primary-color);
+    font-size: 35px;
+    cursor: pointer;
   }
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image-container {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  h2.section-title {
+    font-size: 30px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
+}
 /* Media Query for min width 576px */
 @media screen and (min-width: 576px) {
  

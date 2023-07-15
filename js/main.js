@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navItems = document.querySelectorAll('.nav-item');
   
   navOpen.addEventListener('click', () => {
-    navList.classList.toggle('active');
+    navList.classList.toggle('open');
   });
 
 // Smooth scrolling and page loading
